@@ -11,7 +11,7 @@
 
 
 
-<title>Understanding vegan</title>
+<title>Understanding PCA</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -1832,7 +1832,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="UnderstandingVegan.nb.html">Understanding vegan</a>
+  <a href="UnderstandingVegan.nb.html">Understanding PCA</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -1856,30 +1856,549 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Understanding vegan</h1>
+<h1 class="title toc-ignore">Understanding PCA</h1>
 
 </div>
 
 
 <!-- rnb-text-begin -->
-<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
+<p>Principal components analysis (PCA) is a common ordination I use. However, sometimes is hard to understand what are the different calculations made and why. Fortunately there is a lot of help in websites, books or in R packages explaning the reasons to conduct a pca, the calculation and the interpreation.</p>
+<p>I really like four sources:</p>
+<ol style="list-style-type: decimal">
+<li>Primer of ecological statistics by Nicholas Gotelli and Aaron Ellison</li>
+<li>Numerical ecology by Legendre and Legendre</li>
+<li><a href="https://sites.google.com/site/mb3gustame/indirect-gradient-analysis/pca">GUSTAME website</a></li>
+<li>Documentation in the r package vegan</li>
+</ol>
+<p>I have learned something from each, but it is sometimes hard to connect the different language used.</p>
+<p>Personally, I like a lot the approach of Gotelli and Ellison book of having an example with calculation done (almost by “hand”) to understand the concepts behind and the interpreation.</p>
+<p>Here I attempt to put together such a worked example using the function rda in vegan. This function performs a simple pca if only response variables are given (no explanatory variables or covariates).</p>
+<p>Note: At this point my main objective with this worked example is to understand how are the calculation made!</p>
+<div id="loadind-vegan-and-data" class="section level1">
+<h1>Loadind vegan and data</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh2ZWdhbilcbmBgYCJ9 -->
+<pre class="r"><code>library(vegan)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-plot-begin eyJoZWlnaHQiOjQzMi42MzI5LCJ3aWR0aCI6NzAwLCJzaXplX2JlaGF2aW9yIjowLCJjb25kaXRpb25zIjpbXX0= -->
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAGwCAMAAAB8TkaXAAAAVFBMVEUAAAAAADoAAGYAOjoAOpAAZrY6AAA6ADo6AGY6Ojo6kNtmAABmADpmkJBmtv+QOgCQkGaQtpCQ2/+2ZgC2///bkDrb////tmb/25D//7b//9v////Urxv7AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAN9UlEQVR4nO3dbWPayBWGYTm1nTa0pjXBGPP//2eRxIsTI5kZzZlzHum+Pux6d4kE5F4xGhFNcwBENd5PAMhFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJBFvJCVFu/Huun8+G30dID7JcW7bX71P+zOP3zZHDCZRbwf60uy28e3yZsDbjKJd796Of+4Gxg4EC8m48gLWSbxHse8p0Pv8Jg3ZXPALTbxHgcO/Yh64LhLvCjAKN7am8MSES9kGcW7PQ4ZumHvltkG3Cth5rZ/fPEHtrYPr8dh79OBeHG/5pDYheFU2cf6eLpGvLhT8+mvKb+i5AMP14sUm8e3v+JNv7KHpQgS7+UixeaJIy/uFCTey2Bhvxr6Xhnx4m8xxrzXS2wfa+LFvWLMNlTfHJaIeCGLeCGLeCHLaJ73Op/LCRus2Bx5BycZ8jYH3GI0bPhYP5XcHHCD1Zh317yM/nfixWScsEEW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UIW8UKW2X0bRu+XQ7wowOjm0t+v+p6yOeAW29v6s/YwDJkuqHJg1XcY4sgLWVZjXlZ9hzmj2QZWfYc95nkhi3ghi4sUkMVFCshiqgyyKl+kYNV3lMORF7K4SAFZXKSALOZ5IYt4IYt4IYt4IctonpdV32HP5sjLqu+owOyLOaz6DmtWY15WfYc5Ttggi3gRRur3tYgXUTSHxC6IF0E03ZE3JQziRRDdmCFp4EC8CKL59NeUX1HygS6bgz6OvJDFmBe6mG2ALuZ5sRjEC1nEC1nEC1nEC1nEC1nEC1nEC1nEC1nECwG3r70RL+Ib+NYD8SK8oW/6Eu/i6N2WnnjRS/7ioT/iRSf9D9sEwJgXLcl46842sIhgVJrx3mYTL4sIxiU45h1iEi9LWUWmN9swxCTe4UUEszYH3MSRF7KsxrwsIphhPh/odRjNNrCIYIYZnUrVwTxvGHOaxKqjcrys+j6MeFMZxbtpmqfuQsXQyhT8Hn1BvKmMTtiOY91N89SOfTlhuxtj3kR2U2W7h9cDU2VJGE2lsbtI0V+e4CIFzHDkhSzjMe+na20TNoeS5jM4YbZhaWZ0WshFioWZ04Qc8S4M8VbcL8oi3or7RWGMeevtF6Ux21Btv8AQ4oUs4oUs4oUs4oUs4oUs4oUs4kUYLJwNVcnX/ogXQaR/64J4EQTxQhbxYgLnr+ww5kU29y9LMtuATHpfUydenBCv0+YwXeF4KwygiRdnRce8NQbQxIuLggfLKmOQ9Hj3/37t/j50F7LC+4Wk4PFuiReDQsa7ud7bfOAuZIX3iwjSBxQxx7znI2+l/SKAnBKZbUAEUWeAM+Jtb9W/HVmlqux+4W9G8W4e396fnw6bp5FHs+r7nMwn3vae/bvmZXSqjFXf58X9Kzu35cW7OYY7MlXG2sNzE/P+ZjnDhqf96vFtvxoeNrDqO2rIOmFrHl4/1iNDXo68qMFmqoxV37PE/HCOy2iel1XfMwQ9LYqLixRhRJ2Qiisx3v3q1/mgOjyHO7YVVn0fRLypjI687Vza+3PTPAx9D4Lfoy+IN5VNvF27P1//mDSbsLmFYMybKHnYcP3gHx42tN9+OF0+ZqosAaOpNBlH3n76azc4IuiPt6e5Xi5SwEx6vOfLE0PH1FZ71N1y5IWtvO82tMa+mLNf/fjdHXoHj8/E6yZncBJzQJNz5O0vmm1Gv9C768fFg9eQI74Xy5D1pyIyfk0FWWPe9tC7HRnzltwvysqZkIs6iZczVdZNOUz7gxQB34mFWHq8VfeLsoi34n7RKnwvG9cxb7nXQrwK3ONx/p9nZFNlH+iyuXmL+rGdo+RrIV4BxDu2rZIPdNncvPnHW3qcSrzL4X2RoOT+GfMuje/l2bJHfmYbUJH/sOU24sW3iNd0c/ii5EjDe8w9gHhnqmxvc/lKZOX9IkvUT/qiiHeeiDfrgS6bw1+IN+uBLpvD3xjz5jzQZXP4gtmGjAe6bA6Woo5BiBffIl7TzSmJOX5sDT0z4jXdnJCg48fD2DML+pyJt7KoR7HxZxbz04J4K9OMNybirSxuInGf2RDirS3o+PEQ+ZkNIN7qYo4fW3Gf2W3EC1nEC1lG8bLqe1xqg4NhNvGy6ntccqdlw0ziZe3huPQmxIaZxMuq73ER7zc48sZFvN9h1fdahs++xr4iNpN332i2gVXf68j5IhizDdX2ixHDY4A5jQ4GVY6XVd+LIt7CD/zk/Xlg2ezZv62VEG/hBx7uWl575m9rLXJ/+KEomyPvaZKBI6+59NmGGTGbbWjnGYgXlszGvJuHV+KFKbsTtm3zi3jTeH/Se+8/leFsw/vzP4g3hfc5lvf+k1lOlX2sG+K9n/fslvf+03GFLQzveLz3n454w/COx3v/6Yj3HkXPZAY35j3m9N5/MuK9Q9Hf1ZGNeZ/te+8/FfF+r+jnqd6Hc1zE+z3iDYp4v0e8QRHvHWqNeXO2VueLOTFHw8R7j7AhVPpKZNB5COJVVunL6FGHOsSrjHgLP9BlcwtFvIUf6LK5pWLMW/aBLptbLGYbij7QZXNYIuKFLOKdZtF/etcb8U5S6YQJNxHvFJWmqnAb8U5BvK6I9x7py6GPxJszTGYAfQvx3iFnZDv4X4pubNmI93tjQ4Dkg2XOwZoxyG3E+71K3xMg3lTE+z3iDYp475A15Exf0IQxbyLivUfGyf5Iicw2FEK8Nvikr4B4bRBvBUbxLn7Vd+KtwCbeCKu+Ow8TOceyZxJvhLWH3ePhHMucSbwBVn3nY3sB5nrkJd4FsBrzeq/67h/vAv4ApDej2Qb/Vd+9x7xF9+/9YoKa7zyv78Gq0vchlq1yvItZ9Z14KzCKd3vMsxv2bhe6cDbxVmB0wvbwehz2Ph3mEm/RL+bk7L/kxubDcKrsY308XZtFvEW/Epn3DGY/zsphepFi8/g2h3jHPrWpypHtRYrN08zj5fPck9GY95TsfjX0vTLH3/Hkg+VwvJxJuTKbbegHDh/rcPFmHCwHfwnxuprvRYrRHafWm3zTEVRAvJO3RrteiHfi5pht8LO4eKsdLMna3PLirVQVAwp7C4y3Ck7lKiBeG8RbAfHaIN4KiNcIY157xGuF2QZzxAtZxAtZoeL1/qT13j/SRIrX+xzHe/9IFChe79kl7/0jFfGG2T9SEW+Y/SNVoHjdx5ze+0eiSPG6n+177x9pQsULpCBeyCJeyCJeyCJeyCJeyCJeyJpvvEzazt5s4+Vy2fzNNV6+qLAAxAtZxAtZoeIteY7FmHf+IsVbtjdmG2YvULx80iMN8UKWUbwf636R1oEVKYgXBdjEu21Oa1ntzj/csznOsZDEJN7LOmzHjB/f7t8c51hIYRLveQXMo92fA4fFrPqOCkIdeYEUVmPe06E3acwLJDGabdiv+sHBwHGXeFFAoHleIA3xQhbxQpZbvMBkTvEm8j5Qe+/f/Qlo7594F/0EtPdPvIt+Atr7J95FPwHt/RPvop+A9v6Jd9FPQHv/xLvoJ6C9f+Jd9BPQ3j/xLvoJaO/f+9kD2YgXsogXsogXsogXsogXsogXsogXsogXsogXsogXsogXsogXsvzi7W8d9eS1+/d/dve53DXNw6vjE3B6F7q7hHf3m/N5Ay77n/T6/eJ9/+kTTW+/6m7Sujv+xu1c6j09AZ934WN9fM3bthmfN+C6/0mv3y/e3eDaADV23i9N0N+0deNw+D89Aad34f25vd3n9sdvpzfgsv9pr98v3q3biKG7RWv3rl3fRKcn4PsuPLy6vQGn/U97/X7xbv51Hna56OPtPrR8jn79Xj3fhc2P355vQLv/aa/fLd79qr3J78at3u43rB/t+Qx6uyfg+S60dwh3fQOO+5/2+p2nyvwGvjHi/fJjxf2fz9ec3oDddY4h9/U7x9uPuTwEGTZ0PN6FfmUGvzfg88oQua/fO163+TLfE7bDn/HWfxdOS+q5vQHbzwPd3NfvFm//tjkPG/ymyv74v6f+u3BeGsfrDTjvf9rrd5xtaN8x5xM2x4sU59kGl3fh/fm8R5834Lr/Sa/fcdiwaZrGa8R7+b9963Z5+PQEXN6FbX8H8vaVu7wBn/Y/5fXzxRzIIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIl7IIt4AnG71J494AyDePMQbAPHmIV5D78/d/Tvff/7v+bTkzba58cPDf4k3C/Ha6W77vWtejg2/tH8/lnqstLux8uWHdjmnndctgtURr53z3er7+4BvH9/2q1/9v7780N/WfkO8WYjXzml54fPCCw+v/dj2+I/XHy6LCyAd8Rrq1jZ/Oa8XdYy3v5t983L5YUu8ExCvseOQ4BrvOdLrD8Q7AfEa269e+jHvph3zvlz+Zf/DaR004s1CvHa6A2q3tHq7XtR5tqE7PfvjB2YbMhGvoV2/XNP783+eT+s1tdO73Ujh8w/M82YiXnt+CyzPHPHaI14jxGuPeI0QL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2QRL2T9HykxJYBqwkF6AAAAAElFTkSuQmCC" /></p>
-<!-- rnb-plot-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
-<p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
+<p>The data I use in this example is a subset of 6 root traits variables measured on 236 plants (by extension there are 235 degrees of freedom)</p>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm9vdF90cmFpdHM8LXJlYWRSRFMoXCJyb290X3RyYWl0cy5SRFNcIilcbmhlYWQocm9vdF90cmFpdHMpXG5gYGAifQ== -->
+<pre class="r"><code>root_traits&lt;-readRDS(&quot;root_traits.RDS&quot;)
+head(root_traits)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Nn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMVN6UzhEVVJCL3FsdnBKa1dDUmh5NElQWFJ4a2NjSE5nbmhJTkVhRWtjSkxMYVJXUHR0cnNyVkYxN2RuSGh5c0hKMlpsL2dJTklmRFM0Y3VXSW1mZXhZVjh5T3pPL2VUTy9tWG1ibmxvZVZwZFZRa2d0Q2VOWGdRK0pUTTRQRG8wTUVSSU9nVmNEa1NqcVBZZzNZUmlrSGpYdFBseEpmRjRkMHE2eHd1bTlPa1k3MFZ2cG9iMWJsZmJMaFEvYWNibndEaFp0YTBlanc4OHJIZkY3K3kwc1FNdFZMSFJOUzArc0FDMHBIRDhJdmM1Y05KZjl2TmtsaUNhKzZNQTV6eDhWUEtPM1NKT200NEp2MmgzR0kvTzBLc2UxTjk2djlzemFMV292aEIwLy92ck82dmw4OFUvTzF5cm05UFV4bmhQYWltVUtaelRPODMyK043NFA3WWJIdFFmaDMxMnhPVFZFQWRBZUsyek93S0lWUzk4MlhEQWEyYklGNk5pMk4vZlhtUlJPMUMwNjNpb2lBb2d4SUplSEtwN2hDREJpMmh2cHhTbmhoVFBwekVTQU51cll1eWxKSFJQdm5BRHBBZWtGNlFQcEIwa0crODJhdWl2N2xhQ2EwejA5dGU1QVBmQytBeWwxZHNITDJ4WWtoZkNQVWdMSk5VNEFhTml4c0xOY01ydTVZMjBsOFdWVkZ1WVNFenJ5MzBiSzBJOG9wY2hGR05aRzNqSms3NmErWnBqQ3FZY05zQVdrQ2s3ZWt1dFVBWFZUbnUzcDhwNmF0VTJKc05uSTl5OW1iWmhIU1FNQUFBPT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["rootN"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["rootC"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["sqrt_root"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["sqrt_diameter"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["logRTD"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["SRSA"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"11.28","2":"409.31","3":"54.67","4":"0.48","5":"5.74","6":"0.57","_rn_":"40"},{"1":"10.62","2":"417.32","3":"16.66","4":"0.58","5":"6.14","6":"0.26","_rn_":"41"},{"1":"10.08","2":"445.91","3":"25.42","4":"0.46","5":"6.14","6":"0.41","_rn_":"42"},{"1":"13.21","2":"413.76","3":"25.82","4":"0.50","5":"6.15","6":"0.34","_rn_":"43"},{"1":"7.93","2":"400.32","3":"30.72","4":"0.48","5":"6.16","6":"0.36","_rn_":"44"},{"1":"6.53","2":"448.18","3":"44.90","4":"0.56","5":"5.68","6":"0.43","_rn_":"45"}],"options":{"columns":{"min":{},"max":[10],"total":[6]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Doing a simple pca is done by:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9kZWxfcHJ1ZWJhPC1yZGEocm9vdF90cmFpdHMpXG5gYGAifQ== -->
+<pre class="r"><code>model_prueba&lt;-rda(root_traits)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>What comes out of this is a list of different type of outputs</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMobW9kZWxfcHJ1ZWJhKVxuYGBgIn0= -->
+<pre class="r"><code>names(model_prueba)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSBcImNvbHN1bVwiICAgICAgICAgXCJ0b3QuY2hpXCIgICAgICAgIFwiWWJhclwiICAgICAgICAgICBcIm1ldGhvZFwiICAgICAgICAgXCJjYWxsXCIgICAgICAgICAgIFwicENDQVwiICAgICAgICAgIFxuIFs3XSBcIkNDQVwiICAgICAgICAgICAgXCJDQVwiICAgICAgICAgICAgIFwiaW5lcnRpYVwiICAgICAgICBcInJlZ3VsYXJpemF0aW9uXCJcbiJ9 -->
+<pre><code> [1] &quot;colsum&quot;         &quot;tot.chi&quot;        &quot;Ybar&quot;           &quot;method&quot;         &quot;call&quot;           &quot;pCCA&quot;          
+ [7] &quot;CCA&quot;            &quot;CA&quot;             &quot;inertia&quot;        &quot;regularization&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Out of all those outputs There are four outputs I will go through their calculation. These outputs are important for the plotting the data (which is one of the main reasons to conduct a pca)</p>
+</div>
+<div id="standardizing-variables-here-the-root-traits" class="section level1">
+<h1>1. Standardizing variables (here the root traits)</h1>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoZSBzdGFuZGFyZGl6ZWQgdmFyaWFibGVzIGNhbiBiZSBmb3VuZCBlaXRoZXIgaW4gOlxubW9kZWxfcHJ1ZWJhJFliYXJbMSwxXSAjMC4wODMwNTkxOSAgb3IgXG5gYGAifQ== -->
+<pre class="r"><code>#The standardized variables can be found either in :
+model_prueba$Ybar[1,1] #0.08305919  or </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDgzMDU5MTlcbiJ9 -->
+<pre><code>[1] 0.08305919</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9kZWxfcHJ1ZWJhJENBJFhiYXJbMSwxXSAjMC4wODMwNTkxOVxuYGBgIn0= -->
+<pre class="r"><code>model_prueba$CA$Xbar[1,1] #0.08305919</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDgzMDU5MTlcbiJ9 -->
+<pre><code>[1] 0.08305919</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI0l0IHN0YW5kYXJkaXplcyB0aGUgdmFyaWF0aW9uIG9mIGVhY2ggdmFsdWUgdG8gdGhlIG1lYW4gYnkgdGhlIHN0YW5kYXJkIGRldmlhdGlvblxuKCh0cmFpdHNfdG9fY29ycmVjdCRyb290TlsxXS1tZWFuKHRyYWl0c190b19jb3JyZWN0JHJvb3ROKSkvc2QodHJhaXRzX3RvX2NvcnJlY3Qkcm9vdE4pKS8yLjAxNTE4NFxuYGBgIn0= -->
+<pre class="r"><code>#It standardizes the variation of each value to the mean by the standard deviation
+((traits_to_correct$rootN[1]-mean(traits_to_correct$rootN))/sd(traits_to_correct$rootN))/2.015184</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDgzMDU5MjFcbiJ9 -->
+<pre><code>[1] 0.08305921</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI0FsdGVybmF0aXZlbHkgb25lIGNhbiB1c2UgdGhlIGZ1bmN0aW9uIFwic2NhbGVcIiBmcm9tIGJhc2UgUlxuc2NhbGUoYXMubWF0cml4KHRyYWl0c190b19jb3JyZWN0KSxjZW50ZXIgPSBULHNjYWxlID0gVClbMSwxXS8yLjAxNTE4NCBcbmBgYCJ9 -->
+<pre class="r"><code>#Alternatively one can use the function &quot;scale&quot; from base R
+scale(as.matrix(traits_to_correct),center = T,scale = T)[1,1]/2.015184 </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDgzMDU5MjFcbiJ9 -->
+<pre><code>[1] 0.08305921</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI05PVEUuIEkgc3RpbGwgZG8gbm90IGtub3cgd2h5IGl0IGlzIGRpdmlkZWQgYnkgMi4wMTVcblxuXG4jVGh1cywgdGhpcyBob2xkcyB0cnVlOlxuYWxsKFxuICByb3VuZChzY2FsZSh0cmFpdHNfdG9fY29ycmVjdCRyb290TikvMi4wMTUxODQsZGlnaXRzID0gMyk9PVxuICAgIHJvdW5kKG1vZGVsX3BydWViYSRDQSRYYmFyWywxXSxkaWdpdHMgPSAzKSlcbmBgYCJ9 -->
+<pre class="r"><code>#NOTE. I still do not know why it is divided by 2.015
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlVuZGVyc3RhbmRpbmcgdmVnYW4iDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCg0KQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLg0KDQpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4NCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg0K</div>
+
+#Thus, this holds true:
+all(
+  round(scale(traits_to_correct$rootN)/2.015184,digits = 3)==
+    round(model_prueba$CA$Xbar[,1],digits = 3))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="the-eigenvalues-and-the-eigenvectors" class="section level1">
+<h1>2. The Eigenvalues and the eigenvectors</h1>
+<p>As stated in the Gotelli and Ellisson or in Legendre and Legendre, a PCA relies on calculating eigenvalues and eigenvector of the variance-covariance matrix of the standardize data.</p>
+<p>The exact math behind the calculation of the eigenvalues and eigenvectors is out of the scope here. For the moment it is enough to know that:</p>
+<ol style="list-style-type: lower-alpha">
+<li>An eigenvalue is a single number</li>
+<li>An eigenvector is a seires (a vector) of numbers</li>
+<li>There are as many eigenvalues and eigenvectors as there are variables in the data. In this case 6 because we have 6 root traits.</li>
+<li>Each eigenvalue has its corresponding eigenvector!</li>
+</ol>
+</div>
+<div id="the-eigenvalues" class="section level1">
+<h1>3. The Eigenvalues</h1>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoZSBlaWdlbnZhbHVlcyBjYW4gYmUgZm91bmQgaW46XG5tb2RlbF9wcnVlYmEkQ0EkZWlnXG5gYGAifQ== -->
+<pre class="r"><code>#The eigenvalues can be found in:
+model_prueba$CA$eig</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgUEMxICAgICAgICAgIFBDMiAgICAgICAgICBQQzMgICAgICAgICAgUEM0ICAgICAgICAgIFBDNSAgICAgICAgICBQQzYgXG40LjAxNDk3MmUrMDMgNC43OTU4MDBlKzAyIDQuMDgxMjU1ZSswMSA0LjExMjU1NWUtMDEgNC4wODU0MTFlLTAyIDYuOTM4NTQ3ZS0wMyBcbiJ9 -->
+<pre><code>         PC1          PC2          PC3          PC4          PC5          PC6 
+4.014972e+03 4.795800e+02 4.081255e+01 4.112555e-01 4.085411e-02 6.938547e-03 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoZXkgY2FuIGFsc28gYmUgb2J0YWluZWQgdmlhIHRoZSBzdmQgZnVuY3Rpb24gQlVUIHRoZXkgaGF2ZSB0byBiZSBzcXVhcmVkOlxuICBcbmFsbCgoc3ZkKG1vZGVsX3BydWViYSRDQSRYYmFyKSRkKV4yPT1tb2RlbF9wcnVlYmEkQ0EkZWlnKSNUaGlzIGlzIFRSVUUhXG5gYGAifQ== -->
+<pre class="r"><code>#They can also be obtained via the svd function BUT they have to be squared:
+  
+all((svd(model_prueba$CA$Xbar)$d)^2==model_prueba$CA$eig)#This is TRUE!</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI09yIG1hbnVhbGx5IHdvcmtzIHVzaW5nIHRoZSBlaWdlbiBmdW5jdGlvbi4gQlVUIHRoZXkgaGF2ZSB0byBiZSBtdWx0aXBsaWVkIGJ5IHRoZSBkZWdyZWVzIG9mIGZyZWVkb20gMjM1XG5cbnJvdW5kKG1vZGVsX3BydWViYSRDQSRlaWcsZGlnaXRzID0gMyk9PXJvdW5kKGVpZ2VuKGNvdihtb2RlbF9wcnVlYmEkQ0EkWGJhcikpJHZhbHVlKjIzNSxkaWdpdHMgPSAzKVxuYGBgIn0= -->
+<pre class="r"><code>#Or manually works using the eigen function. BUT they have to be multiplied by the degrees of freedom 235
+
+round(model_prueba$CA$eig,digits = 3)==round(eigen(cov(model_prueba$CA$Xbar))$value*235,digits = 3)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiIFBDMSAgUEMyICBQQzMgIFBDNCAgUEM1ICBQQzYgXG5UUlVFIFRSVUUgVFJVRSBUUlVFIFRSVUUgVFJVRSBcbiJ9 -->
+<pre><code> PC1  PC2  PC3  PC4  PC5  PC6 
+TRUE TRUE TRUE TRUE TRUE TRUE </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>In summary this confirms what the book says: the eigenvalues are calculated from variance-covariance matrix of standardized data (standardization of (yi-mean(y))/sd(y))</p>
+</div>
+<div id="the-eigenvectors-or-species-scores-in-vegan-documentation" class="section level1">
+<h1>4. The Eigenvectors (or “species scores” in vegan documentation)</h1>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoZSBlaWdlbnZlY3RvcnMgb3IgXCJzcGVjaWVzXCIgc2NvcmVzIGNhbiBiZSBmb3VuZCBpbjpcbm1vZGVsX3BydWViYSRDQSR2XG5gYGAifQ== -->
+<pre class="r"><code>#The eigenvectors or &quot;species&quot; scores can be found in:
+model_prueba$CA$v</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgICAgICAgICAgUEMxICAgICAgICAgICBQQzIgICAgICAgICBQQzMgICAgICAgICAgUEM0ICAgICAgICAgICBQQzUgICAgICAgICAgIFBDNlxucm9vdE4gICAgICAgICAtMC4wMTUzNjA5OTc2IC0wLjE5MTc2MTc0NjEgLTAuOTgxMTA4MzQgIDAuMDE3ODQ3ODUxICAwLjAwOTU2NzMxNjQgLTIuNzk2ODYxZS0wM1xucm9vdEMgICAgICAgICAtMC45OTk1MzMxNTk2ICAwLjAyODc4OTgwNTkgIDAuMDEwMDU0MjIgIDAuMDAxODYwMDUzIC0wLjAwMDIzMjM2MTkgLTkuMzc2NTA4ZS0wNVxuc3FydF9yb290ICAgICAgMC4wMjYzMTc3MTMzICAwLjk4MDk5NDc4ODggLTAuMTkyMjExMzMgLTAuMDAyNzYxMTUzIC0wLjAwMTM3NTYxNTkgLTEuMzc1NjIwZS0wM1xuc3FydF9kaWFtZXRlciAtMC4wMDAyNTA1MDQ2IC0wLjAwMDYzOTg1MDcgLTAuMDA2ODc5ODQgLTAuMDc2NzA4MTAyIC0wLjI5NzQ0NzM0NTQgIDkuNTE2MjY2ZS0wMVxubG9nUlREICAgICAgICAtMC4wMDE5MTgzMjAxIC0wLjAwMzQ4MTQ5NjYgLTAuMDEwMDg1NzYgLTAuODUzODM0MjQwICAwLjUxMjM3MDE1MzYgIDkuMTI0OTA3ZS0wMlxuU1JTQSAgICAgICAgICAgMC4wMDEwNjY3MTU2ICAwLjAwNTkzOTE4MjkgIDAuMDE1MjAxNzYgIDAuNTE0NTQxODYyICAwLjgwNTU0ODUyMjggIDIuOTMzNzgyZS0wMVxuIn0= -->
+<pre><code>                        PC1           PC2         PC3          PC4           PC5           PC6
+rootN         -0.0153609976 -0.1917617461 -0.98110834  0.017847851  0.0095673164 -2.796861e-03
+rootC         -0.9995331596  0.0287898059  0.01005422  0.001860053 -0.0002323619 -9.376508e-05
+sqrt_root      0.0263177133  0.9809947888 -0.19221133 -0.002761153 -0.0013756159 -1.375620e-03
+sqrt_diameter -0.0002505046 -0.0006398507 -0.00687984 -0.076708102 -0.2974473454  9.516266e-01
+logRTD        -0.0019183201 -0.0034814966 -0.01008576 -0.853834240  0.5123701536  9.124907e-02
+SRSA           0.0010667156  0.0059391829  0.01520176  0.514541862  0.8055485228  2.933782e-01</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2FzIGJlZm9yZSB0aGV5IGNhbiBiZSBtYW51YWxseSBjYWxjdWxhdGVkIGZyb20gdmFyaWFuY2UtY292YXJpYW5jZSBtYXRyaXhcbnJvdW5kKGVpZ2VuKGNvdihtb2RlbF9wcnVlYmEkQ0EkWGJhcikpJHZlY3RvcnMsZGlnaXRzID0gMyk9PXJvdW5kKG1vZGVsX3BydWViYSRDQSR2LGRpZ2l0cyA9IDMpXG5gYGAifQ== -->
+<pre class="r"><code>#as before they can be manually calculated from variance-covariance matrix
+round(eigen(cov(model_prueba$CA$Xbar))$vectors,digits = 3)==round(model_prueba$CA$v,digits = 3)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgUEMxICBQQzIgICBQQzMgIFBDNCAgIFBDNSAgUEM2XG5yb290TiAgICAgICAgIFRSVUUgVFJVRSBGQUxTRSBUUlVFIEZBTFNFIFRSVUVcbnJvb3RDICAgICAgICAgVFJVRSBUUlVFIEZBTFNFIFRSVUUgIFRSVUUgVFJVRVxuc3FydF9yb290ICAgICBUUlVFIFRSVUUgRkFMU0UgVFJVRSBGQUxTRSBUUlVFXG5zcXJ0X2RpYW1ldGVyIFRSVUUgVFJVRSBGQUxTRSBUUlVFIEZBTFNFIFRSVUVcbmxvZ1JURCAgICAgICAgVFJVRSBUUlVFIEZBTFNFIFRSVUUgRkFMU0UgVFJVRVxuU1JTQSAgICAgICAgICBUUlVFIFRSVUUgRkFMU0UgVFJVRSBGQUxTRSBUUlVFXG4ifQ== -->
+<pre><code>               PC1  PC2   PC3  PC4   PC5  PC6
+rootN         TRUE TRUE FALSE TRUE FALSE TRUE
+rootC         TRUE TRUE FALSE TRUE  TRUE TRUE
+sqrt_root     TRUE TRUE FALSE TRUE FALSE TRUE
+sqrt_diameter TRUE TRUE FALSE TRUE FALSE TRUE
+logRTD        TRUE TRUE FALSE TRUE FALSE TRUE
+SRSA          TRUE TRUE FALSE TRUE FALSE TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2J1dCwgZm9yIHNvbWUgcmVhc29uIGFsdGhvdWdoIHRoZSB2YWx1ZXMgYXJlIHRoZSBzYW1lIHRoZSBzaWduIGlzIHNvbWV0aW1lcyBub3QgdGhlIHNhbWUuLi5cbmBgYCJ9 -->
+<pre class="r"><code>#but, for some reason although the values are the same the sign is sometimes not the same...</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoZSBlaWdlbnZlY3RvcnMgY2FuIGFsc28gYmUgcmV0cmlldmVkIHZpYSBmdW5jdGlvbiBcInNjb3Jlc1wiIHdpdGggbm8gc2NhbGluZyFcbnNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9IFwic3BlY2llc1wiLGNob2ljZXMgPSAxLHNjYWxpbmcgPSAwKT09bW9kZWxfcHJ1ZWJhJENBJHZbLDFdXG5gYGAifQ== -->
+<pre class="r"><code>#The eigenvectors can also be retrieved via function &quot;scores&quot; with no scaling!
+scores(model_prueba,display = &quot;species&quot;,choices = 1,scaling = 0)==model_prueba$CA$v[,1]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgUEMxXG5yb290TiAgICAgICAgIFRSVUVcbnJvb3RDICAgICAgICAgVFJVRVxuc3FydF9yb290ICAgICBUUlVFXG5zcXJ0X2RpYW1ldGVyIFRSVUVcbmxvZ1JURCAgICAgICAgVFJVRVxuU1JTQSAgICAgICAgICBUUlVFXG4ifQ== -->
+<pre><code>               PC1
+rootN         TRUE
+rootC         TRUE
+sqrt_root     TRUE
+sqrt_diameter TRUE
+logRTD        TRUE
+SRSA          TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="scaling-of-the-eigenvectors" class="section level2">
+<h2>4.1 “Scaling” of the eigenvectors</h2>
+<p>The eigenvectors can be “scaled” by “species” or “sites” (using the terminology from vegan). This is done using the score function. This scaling matters because it determines the plotting and interpreation from the results (see below)</p>
+<p>In both types of scaling the eigenvecors are first multiplied by a “constant” which is equal to the fourth root of the product of the sum of eigenvalues and the degrees of freedom (the formula can be found in table 2 of the “Design decisions and implementation details in vegan” pdf that comes with vegan):</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI0luIHRoaXMgY2FzZSwgdGhlIGNvbnN0YW50IGlzIDMyLjEzMTUgYW5kIGNvbWVzIGFmdGVyOlxuKHN1bShtb2RlbF9wcnVlYmEkQ0EkZWlnKSooMjM2LTEpKV4oMS80KSAjMzIuMTMxNVxuYGBgIn0= -->
+<pre class="r"><code>#In this case, the constant is 32.1315 and comes after:
+(sum(model_prueba$CA$eig)*(236-1))^(1/4) #32.1315</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDMyLjEzMTVcbiJ9 -->
+<pre><code>[1] 32.1315</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2FuZCBvbmUgY2FuIGZpbmQgaXQgYXMgXCJjb25zdFwiICBpbiB0aGUgb3V0cHV0IG9mIHNjb3JlcyByZWdhcmRsZXNzIG9mIHNjYWxpbmdcbnNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9IFwic3BlY2llc1wiKVxuYGBgIn0= -->
+<pre class="r"><code>#and one can find it as &quot;const&quot;  in the output of scores regardless of scaling
+scores(model_prueba,display = &quot;species&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgICAgICAgICBQQzEgICAgICAgICAgUEMyXG5yb290TiAgICAgICAgICAtMC40NjQzNjk0MiAtMi4wMDM1MjgwODZcbnJvb3RDICAgICAgICAgLTMwLjIxNjMwNzk1ICAwLjMwMDc5NjA5Nlxuc3FydF9yb290ICAgICAgIDAuNzk1NTk1NTQgMTAuMjQ5NDQwNTI0XG5zcXJ0X2RpYW1ldGVyICAtMC4wMDc1NzI4NiAtMC4wMDY2ODUxNjRcbmxvZ1JURCAgICAgICAgIC0wLjA1Nzk5MTYyIC0wLjAzNjM3NDcwMVxuU1JTQSAgICAgICAgICAgIDAuMDMyMjQ3MjYgIDAuMDYyMDUyNjI1XG5hdHRyKCxcImNvbnN0XCIpXG5bMV0gMzIuMTMxNVxuIn0= -->
+<pre><code>                       PC1          PC2
+rootN          -0.46436942 -2.003528086
+rootC         -30.21630795  0.300796096
+sqrt_root       0.79559554 10.249440524
+sqrt_diameter  -0.00757286 -0.006685164
+logRTD         -0.05799162 -0.036374701
+SRSA            0.03224726  0.062052625
+attr(,&quot;const&quot;)
+[1] 32.1315</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="scaling-by-sites" class="section level3">
+<h3>4.1.1 Scaling by “sites”</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2EpIElmIGl0IGlzIHNjYWxpbmcgYnkgXCJzaXRlc1wiIHRoZSBlaWdlbnZlY3RvcnMgYXJlIGp1c3QgbXVsdGlwbGllZCBieSB0aGUgY29uc3RhbnRcblxuYWxsKFxuICByb3VuZChzY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSBcInNwZWNpZXNcIixzY2FsaW5nID0gXCJzaXRlc1wiLGNob2ljZXMgPSAxKSxkaWdpdHMgPSAyKT09XG4gICAgcm91bmQobW9kZWxfcHJ1ZWJhJENBJHZbLDFdKjMyLjEzMTUgLGRpZ2l0cyA9IDIpKVxuYGBgIn0= -->
+<pre class="r"><code>#a) If it is scaling by &quot;sites&quot; the eigenvectors are just multiplied by the constant
+
+all(
+  round(scores(model_prueba,display = &quot;species&quot;,scaling = &quot;sites&quot;,choices = 1),digits = 2)==
+    round(model_prueba$CA$v[,1]*32.1315 ,digits = 2))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="scaling-by-species" class="section level3">
+<h3>4.1.2 Scaling by “species”</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2IpIElmIGl0IGlzIHNjYWxpbmcgYnkgXCJzcGVjaWVzXCIgZWFjaCBlaWdldmVjdG9ycyBpcyBmdXJ0aGVyIG11bHRpcGxpZWQgYnkgdGhlIHNxdWFyZSByb290XG4jb2YgdGhlIHRoZWlyIGNvcnJlc3BvbmRpbmcgZWlnZW52YWx1ZSBkaXZpZGVkIGJ5IHRoZSBzdW0gb2YgYWxsIGVpZ2VudmVjdG9yc1xuXG4jVGhpcyBzY2FsaW5nIGlzIHRoZSBkZWZhdWx0IGZyb20gdGhlIHNjb3JlIGZ1bmN0aW9uOlxuc2NvcmVzKG1vZGVsX3BydWViYSxkaXNwbGF5ID0gXCJzcGVjaWVzXCIsY2hvaWNlcyA9IDEsc2NhbGluZyA9IFwic3BlY2llc1wiKT09XG4gIHNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9IFwic3BlY2llc1wiLGNob2ljZXMgPSAxKVxuYGBgIn0= -->
+<pre class="r"><code>#b) If it is scaling by &quot;species&quot; each eigevectors is further multiplied by the square root
+#of the their corresponding eigenvalue divided by the sum of all eigenvectors
+
+#This scaling is the default from the score function:
+scores(model_prueba,display = &quot;species&quot;,choices = 1,scaling = &quot;species&quot;)==
+  scores(model_prueba,display = &quot;species&quot;,choices = 1)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgUEMxXG5yb290TiAgICAgICAgIFRSVUVcbnJvb3RDICAgICAgICAgVFJVRVxuc3FydF9yb290ICAgICBUUlVFXG5zcXJ0X2RpYW1ldGVyIFRSVUVcbmxvZ1JURCAgICAgICAgVFJVRVxuU1JTQSAgICAgICAgICBUUlVFXG4ifQ== -->
+<pre><code>               PC1
+rootN         TRUE
+rootC         TRUE
+sqrt_root     TRUE
+sqrt_diameter TRUE
+logRTD        TRUE
+SRSA          TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2NhbGN1bGF0aW5nIGJ5IGhhbmQgKGhlcmUgb25seSBkb25lIHRvIHRoZSBmaXJzdCBlaWdlbnZlY3Rvcik6XG5hbGwoXG4gIHJvdW5kKHNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9IFwic3BlY2llc1wiLGNob2ljZXMgPSAxKSxkaWdpdHMgPSAzKT09XG4gICAgcm91bmQobW9kZWxfcHJ1ZWJhJENBJHZbLDFdKjMyLjEzMTUqc3FydChtb2RlbF9wcnVlYmEkQ0EkZWlnWzFdL3N1bShtb2RlbF9wcnVlYmEkQ0EkZWlnKSkgLGRpZ2l0cyA9IDMpKVxuYGBgIn0= -->
+<pre class="r"><code>#calculating by hand (here only done to the first eigenvector):
+all(
+  round(scores(model_prueba,display = &quot;species&quot;,choices = 1),digits = 3)==
+    round(model_prueba$CA$v[,1]*32.1315*sqrt(model_prueba$CA$eig[1]/sum(model_prueba$CA$eig)) ,digits = 3))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+</div>
+</div>
+<div id="the-principal-component-scores-aka-site-scores-in-vegan" class="section level1">
+<h1>5. The Principal Component Scores (aka “Site Scores” in vegan)</h1>
+<p>According to Gotelli and Ellison, these scores are the sum of the products of the eigenvectors by the standardized y variables. One way to understand them is as new variables that result from combining the original standardized variables.</p>
+<p>Because of mathematical reasons I yet do not understand, these new variables are independent of each other, which is one of the main reasons we conduct a PCA in the first place.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoZXkgY2FuIGJlIGZvdW5kIGluOlxuaGVhZChtb2RlbF9wcnVlYmEkQ0EkdSlcbmBgYCJ9 -->
+<pre class="r"><code>#They can be found in:
+head(model_prueba$CA$u)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgUEMxICAgICAgICAgIFBDMiAgICAgICAgIFBDMyAgICAgICAgICBQQzQgICAgICAgICAgUEM1ICAgICAgICAgUEM2XG40MCAtMC4wMTcyODgwMDUgIDAuMDE0Njg5NDUyIC0wLjAyMDQxMzg2IC0wLjAwMjk3OTM0OSAtMC4wMDUyNDQ1MzMgLTAuMDYyMTM4NjdcbjQxIC0wLjAyNjU1MDk4MyAtMC4wOTUzMjczMDIgIDAuMDYxNTI1MzMgLTAuMDQzNzMyOTc4IC0wLjAxNTA1NzQwNCAgMC4wMTE1NTEzNVxuNDIgLTAuMDU1NzI0NDYzIC0wLjA2Njk2NjEyOCAgMC4wNTI3MDg5NyAtMC4wMzI5NzcwNDYgIDAuMDI3NzU4NzYxIC0wLjA1Mzc2ODY5XG40MyAtMC4wMjI2ODAzNzUgLTAuMDcwMzQzNjk4ICAwLjAxNzI1MTg0IC0wLjAzODMzNDI3OSAgMC4wMTkyNzE4NTUgLTAuMDQ0MjUyNzZcbjQ0IC0wLjAwODYzNDEzOCAtMC4wNTQxNjE0NzAgIDAuMDU5MTU0MDggLTAuMDUxNTA0OTc2ICAwLjAxMDU3NDMwMyAtMC4wNDY1NzUwM1xuNDUgLTAuMDU3NDc1NDkzIC0wLjAwNzgxNTI3NCAgMC4wNTAzMTY5MCAtMC4wMDQyNDUwNjQgLTAuMDcyNDg3MjQwIC0wLjAyMDg5NzI5XG4ifQ== -->
+<pre><code>            PC1          PC2         PC3          PC4          PC5         PC6
+40 -0.017288005  0.014689452 -0.02041386 -0.002979349 -0.005244533 -0.06213867
+41 -0.026550983 -0.095327302  0.06152533 -0.043732978 -0.015057404  0.01155135
+42 -0.055724463 -0.066966128  0.05270897 -0.032977046  0.027758761 -0.05376869
+43 -0.022680375 -0.070343698  0.01725184 -0.038334279  0.019271855 -0.04425276
+44 -0.008634138 -0.054161470  0.05915408 -0.051504976  0.010574303 -0.04657503
+45 -0.057475493 -0.007815274  0.05031690 -0.004245064 -0.072487240 -0.02089729</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>As mentioned above, we get as many site scores as there are variables in the original table:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGltKG1vZGVsX3BydWViYSRDQSR1KSM2IHByaW5jaXBhbCBjb21wZW5lbnQgc2NvcmVzIChvciBcInNpdGUgc2NvcmVzXCIgYXMgaW4gdmVnYW4pIHdpdGggMjM2IFwib2JzZXJ2YXRpb25zXCJcbmBgYCJ9 -->
+<pre class="r"><code>dim(model_prueba$CA$u)#6 principal compenent scores (or &quot;site scores&quot; as in vegan) with 236 &quot;observations&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIzNiAgIDZcbiJ9 -->
+<pre><code>[1] 236   6</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGltKHRyYWl0c190b19jb3JyZWN0KSM2IG9yaWduYWwgdmFyYWlibGVzIChyb290IHRyYWl0cykgd2l0aCAyMzYgXCJvYnNlcnZhdGlvbnNcIlxuYGBgIn0= -->
+<pre class="r"><code>dim(traits_to_correct)#6 orignal varaibles (root traits) with 236 &quot;observations&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIzNiAgIDZcbiJ9 -->
+<pre><code>[1] 236   6</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Their calculation follows indeed the formula in Gotelli and Ellison</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI0luZGVlZCwgdmVnYW4gZm9sbG93cyB0aGUgZm9ybXVsYSBzdGF0ZWQgaW4gR290ZWxsaSBCVVQgaW4gdGhlIHBhY2thZ2UgdGhlc2Ugc3VtcyBhcmUgZnVydGhlciBkaXZpZGVkIGJ5IHRoZSBcbiNjb3JyZXNwb25kaW5nIGVpZ2VudmxhdWUgKEkgc3RpbGwgZG8gbm90IGtub3cgd2h5KS4gSGVyZSBmb3IgdGhlIGZpcnN0IHNjb3JlOlxuXG5zdW0oXG4gIG1vZGVsX3BydWViYSRDQSR2WywxXSptb2RlbF9wcnVlYmEkQ0EkWGJhclsxLF0pLzYzLjM2MzggIy0wLjAxNzI4ODAxXG5gYGAifQ== -->
+<pre class="r"><code>#Indeed, vegan follows the formula stated in Gotelli BUT in the package these sums are further divided by the 
+#corresponding eigenvlaue (I still do not know why). Here for the first score:
+
+sum(
+  model_prueba$CA$v[,1]*model_prueba$CA$Xbar[1,])/63.3638 #-0.01728801</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAxNzI4ODAxXG4ifQ== -->
+<pre><code>[1] -0.01728801</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtKFxuICBtb2RlbF9wcnVlYmEkQ0EkdlssMV0qbW9kZWxfcHJ1ZWJhJENBJFhiYXJbMixdKS82My4zNjM4ICMtMC4wMjY1NTA5OVxuYGBgIn0= -->
+<pre class="r"><code>sum(
+  model_prueba$CA$v[,1]*model_prueba$CA$Xbar[2,])/63.3638 #-0.02655099</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAyNjU1MDk5XG4ifQ== -->
+<pre><code>[1] -0.02655099</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtKFxuICBtb2RlbF9wcnVlYmEkQ0EkdlssMV0qbW9kZWxfcHJ1ZWJhJENBJFhiYXJbMyxdKS82My4zNjM4ICMtMC4wNTU3MjQ0N1xuYGBgIn0= -->
+<pre class="r"><code>sum(
+  model_prueba$CA$v[,1]*model_prueba$CA$Xbar[3,])/63.3638 #-0.05572447</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjA1NTcyNDQ3XG4ifQ== -->
+<pre><code>[1] -0.05572447</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtKFxuICBtb2RlbF9wcnVlYmEkQ0EkdlssMV0qbW9kZWxfcHJ1ZWJhJENBJFhiYXJbNCxdKS82My4zNjM4ICMtMC4wMjI2ODAzOFxuYGBgIn0= -->
+<pre class="r"><code>sum(
+  model_prueba$CA$v[,1]*model_prueba$CA$Xbar[4,])/63.3638 #-0.02268038</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAyMjY4MDM4XG4ifQ== -->
+<pre><code>[1] -0.02268038</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtKFxuICBtb2RlbF9wcnVlYmEkQ0EkdlssMV0qbW9kZWxfcHJ1ZWJhJENBJFhiYXJbNSxdKS82My4zNjM4ICMtMC4wMDg2MzQxMzlcbmBgYCJ9 -->
+<pre class="r"><code>sum(
+  model_prueba$CA$v[,1]*model_prueba$CA$Xbar[5,])/63.3638 #-0.008634139</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAwODYzNDEzOVxuIn0= -->
+<pre><code>[1] -0.008634139</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI3doaWNoIGluZGVlZCBpcyB0aGUgc2FtZTpcbm1vZGVsX3BydWViYSRDQSR1WzEsMV0jIC0wLjAxNzI4ODAxXG5gYGAifQ== -->
+<pre class="r"><code>#which indeed is the same:
+model_prueba$CA$u[1,1]# -0.01728801</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAxNzI4ODAxXG4ifQ== -->
+<pre><code>[1] -0.01728801</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9kZWxfcHJ1ZWJhJENBJHVbMiwxXSMgLTAuMDI2NTUwOThcbmBgYCJ9 -->
+<pre class="r"><code>model_prueba$CA$u[2,1]# -0.02655098</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAyNjU1MDk4XG4ifQ== -->
+<pre><code>[1] -0.02655098</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9kZWxfcHJ1ZWJhJENBJHVbMywxXSMgLTAuMDU1NzI0NDZcbmBgYCJ9 -->
+<pre class="r"><code>model_prueba$CA$u[3,1]# -0.05572446</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjA1NTcyNDQ2XG4ifQ== -->
+<pre><code>[1] -0.05572446</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9kZWxfcHJ1ZWJhJENBJHVbNCwxXSMgLTAuMDIyNjgwMzhcbmBgYCJ9 -->
+<pre class="r"><code>model_prueba$CA$u[4,1]# -0.02268038</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAyMjY4MDM4XG4ifQ== -->
+<pre><code>[1] -0.02268038</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubW9kZWxfcHJ1ZWJhJENBJHVbNSwxXSMgLTAuMDA4NjM0MTM4XG5gYGAifQ== -->
+<pre class="r"><code>model_prueba$CA$u[5,1]# -0.008634138</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAwODYzNDEzOFxuIn0= -->
+<pre><code>[1] -0.008634138</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI09yIHRoZXkgY2FuIGJlIHJldHJpZXZlZCB1c2luZyB0aGUgc2NvcmUgZnVuY3Rpb24gd2l0aG91dCBzY2FsaW5nOlxuXG5zY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSBcInNpdGVzXCIsc2NhbGluZyA9IDApWzEsMV0jIC0wLjAxNzI4ODAxXG5gYGAifQ== -->
+<pre class="r"><code>#Or they can be retrieved using the score function without scaling:
+
+scores(model_prueba,display = &quot;sites&quot;,scaling = 0)[1,1]# -0.01728801</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAxNzI4ODAxXG4ifQ== -->
+<pre><code>[1] -0.01728801</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2NvcmVzKG1vZGVsX3BydWViYSxkaXNwbGF5ID0gXCJzaXRlc1wiLHNjYWxpbmcgPSAwKVsyLDFdIyAtMC4wMjY1NTA5OFxuYGBgIn0= -->
+<pre class="r"><code>scores(model_prueba,display = &quot;sites&quot;,scaling = 0)[2,1]# -0.02655098</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAyNjU1MDk4XG4ifQ== -->
+<pre><code>[1] -0.02655098</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2NvcmVzKG1vZGVsX3BydWViYSxkaXNwbGF5ID0gXCJzaXRlc1wiLHNjYWxpbmcgPSAwKVszLDFdIyAtMC4wNTU3MjQ0NlxuYGBgIn0= -->
+<pre class="r"><code>scores(model_prueba,display = &quot;sites&quot;,scaling = 0)[3,1]# -0.05572446</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjA1NTcyNDQ2XG4ifQ== -->
+<pre><code>[1] -0.05572446</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="scaling-of-the-site-scores" class="section level2">
+<h2>5.1 “Scaling” of the site scores</h2>
+<p>As with the eigenvectors (or the “species scores” in vegan), the site scores can also be scaled according by “site” or by “species”. The formula for each type of scaling in table 1 of the “Decisions” PDF in the vegan documentation.</p>
+<p>As in the eigenvectors, for both scalings the scores are always multiplied by a constant that is:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKHN1bShtb2RlbF9wcnVlYmEkQ0EkZWlnKSooMjM2LTEpKV4oMS80KSAjMzIuMTMxNVxuYGBgIn0= -->
+<pre class="r"><code>(sum(model_prueba$CA$eig)*(236-1))^(1/4) #32.1315</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDMyLjEzMTVcbiJ9 -->
+<pre><code>[1] 32.1315</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+</div>
+<div id="sacling-by-site" class="section level1">
+<h1>5.1.1 Sacling by “site”</h1>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2EpIElmIHNjYWxpbmcgYnkgXCJzaXRlXCIgZWFjaCBzY29yZSBpcyBmdXJ0aGVyIG11bHRpcGxpZWQgYnkgdGhlIHNxdWFyZSByb290IG9mIHRoZSB0aGVpciBjb3JyZXNwb25kaW5nIGVpZ2VudmFsdWUgZGl2aWRlZCBieSB0aGUgc3VtIG9mIGFsbCBlaWdlbnZlY3RvcnNcblxuI2NhbGN1bGF0aW5nIGJ5IGhhbmQgKGhlcmUgb25seSBkb25lIHRvIHRoZSBmaXJzdCBzY29yZSk6XG5hbGwoXG4gIHJvdW5kKHNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9IFwic2l0ZXNcIixzY2FsaW5nID0gXCJzaXRlc1wiLGNob2ljZXMgPSAxKSxkaWdpdHMgPSAzKT09XG4gICAgcm91bmQobW9kZWxfcHJ1ZWJhJENBJHVbLDFdKjMyLjEzMTUqc3FydChtb2RlbF9wcnVlYmEkQ0EkZWlnWzFdL3N1bShtb2RlbF9wcnVlYmEkQ0EkZWlnKSkgLGRpZ2l0cyA9IDMpKVxuYGBgIn0= -->
+<pre class="r"><code>#a) If scaling by &quot;site&quot; each score is further multiplied by the square root of the their corresponding eigenvalue divided by the sum of all eigenvectors
+
+#calculating by hand (here only done to the first score):
+all(
+  round(scores(model_prueba,display = &quot;sites&quot;,scaling = &quot;sites&quot;,choices = 1),digits = 3)==
+    round(model_prueba$CA$u[,1]*32.1315*sqrt(model_prueba$CA$eig[1]/sum(model_prueba$CA$eig)) ,digits = 3))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="sacling-by-species" class="section level1">
+<h1>5.1.2 Sacling by “species”</h1>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2IpIFNjYWxpbmcgYnkgXCJzcGVjaWVzXCJcbiNJbiB0aGlzIHNjYWxpbmcgdGhlIHNpdGUgc2NvcmVzIGFyZSBvbmx5IG11bHRpcGxpZWQgYnkgdGhlIGNvbnN0YW50IFxuXG4jVGh1czpcbm1vZGVsX3BydWViYSRDQSR1WzEsMV0qMzIuMTMxNSAjLTAuNTU1NDg5NVxubW9kZWxfcHJ1ZWJhJENBJHVbMiwxXSozMi4xMzE1ICMtMC44NTMxMjI5XG5tb2RlbF9wcnVlYmEkQ0EkdVszLDFdKjMyLjEzMTUgIy0xLjc5MDUxMVxuYGBgIn0= -->
+<pre class="r"><code>#b) Scaling by &quot;species&quot;
+#In this scaling the site scores are only multiplied by the constant 
+
+#Thus:
+model_prueba$CA$u[1,1]*32.1315 #-0.5554895
+model_prueba$CA$u[2,1]*32.1315 #-0.8531229
+model_prueba$CA$u[3,1]*32.1315 #-1.790511</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoaXMgaXMgdGhlIGRlZmF1bHQgc2NhbGluZyBmcm9tIHRoZSBcInNjb3Jlc1wiIGZ1bmN0aW9uIChhcyBmb3IgdGhlIGVpZ2VudmVjdG9ycylcbnNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9IFwic2l0ZXNcIilbMSwxXSMgLTAuNTU1NDg5NlxuYGBgIn0= -->
+<pre class="r"><code>#This is the default scaling from the &quot;scores&quot; function (as for the eigenvectors)
+scores(model_prueba,display = &quot;sites&quot;)[1,1]# -0.5554896</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjU1NTQ4OTZcbiJ9 -->
+<pre><code>[1] -0.5554896</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2NvcmVzKG1vZGVsX3BydWViYSxkaXNwbGF5ID0gXCJzaXRlc1wiLHNjYWxpbmcgPSBcInNwZWNpZXNcIilbMSwxXSMgLTAuNTU1NDg5NlxuYGBgIn0= -->
+<pre class="r"><code>scores(model_prueba,display = &quot;sites&quot;,scaling = &quot;species&quot;)[1,1]# -0.5554896</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjU1NTQ4OTZcbiJ9 -->
+<pre><code>[1] -0.5554896</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RodXMgdGhpcyBob2xkczpcbmFsbChcbiAgcm91bmQoc2NvcmVzKG1vZGVsX3BydWViYSxkaXNwbGF5ID0gXCJzaXRlc1wiKVssMV0sZGlnaXRzID0gNCk9PVxuICAgIHJvdW5kKG1vZGVsX3BydWViYSRDQSR1WywxXSozMi4xMzE1LGRpZ2l0cyA9IDQpKVxuYGBgIn0= -->
+<pre class="r"><code>#Thus this holds:
+all(
+  round(scores(model_prueba,display = &quot;sites&quot;)[,1],digits = 4)==
+    round(model_prueba$CA$u[,1]*32.1315,digits = 4))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="understanding-the-scalings" class="section level1">
+<h1>Understanding the scalings</h1>
+<p>In summary, when scaling by species the site scores (aka principal component scores) are only multiplied by the constant value while the species scores (aka eigenvectors) are further multiplied by the square root of the respective eigenvalue divided by the sum of eigenvalues. When scaling by “sites” it is the opposite.</p>
+<p>Or in more simpler terms:</p>
+<ul>
+<li>When scaling by site, the site scores are scaled, the species scores are not</li>
+<li>When scaling by species, the species scores are scaled, the sites cores are not</li>
+</ul>
+<p>Looking closely at the scaling formula, this is like a proportion of variation explained by each site principal component score.</p>
+<p>Thus by multiplying each scores by this proportion one is standardizing its value in units of variance explained.</p>
+<!-- rnb-text-end -->
+</div>
+
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlVuZGVyc3RhbmRpbmcgUENBIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KUHJpbmNpcGFsIGNvbXBvbmVudHMgYW5hbHlzaXMgKFBDQSkgaXMgYSBjb21tb24gb3JkaW5hdGlvbiBJIHVzZS4gSG93ZXZlciwgc29tZXRpbWVzIGlzIGhhcmQgdG8gdW5kZXJzdGFuZCB3aGF0IGFyZSB0aGUgZGlmZmVyZW50IGNhbGN1bGF0aW9ucyBtYWRlIGFuZCB3aHkuIEZvcnR1bmF0ZWx5IHRoZXJlIGlzIGEgbG90IG9mIGhlbHAgaW4gd2Vic2l0ZXMsIGJvb2tzIG9yIGluIFIgcGFja2FnZXMgZXhwbGFuaW5nIHRoZSByZWFzb25zIHRvIGNvbmR1Y3QgYSBwY2EsIHRoZSBjYWxjdWxhdGlvbiBhbmQgdGhlIGludGVycHJlYXRpb24uDQoNCg0KSSByZWFsbHkgbGlrZSBmb3VyIHNvdXJjZXM6DQoNCiAxLiBQcmltZXIgb2YgZWNvbG9naWNhbCBzdGF0aXN0aWNzIGJ5IE5pY2hvbGFzIEdvdGVsbGkgYW5kIEFhcm9uIEVsbGlzb24NCiAyLiBOdW1lcmljYWwgZWNvbG9neSBieSBMZWdlbmRyZSBhbmQgTGVnZW5kcmUNCiAzLiBbR1VTVEFNRSB3ZWJzaXRlXShodHRwczovL3NpdGVzLmdvb2dsZS5jb20vc2l0ZS9tYjNndXN0YW1lL2luZGlyZWN0LWdyYWRpZW50LWFuYWx5c2lzL3BjYSkNCiA0LiBEb2N1bWVudGF0aW9uIGluIHRoZSByIHBhY2thZ2UgdmVnYW4NCiANCkkgaGF2ZSBsZWFybmVkIHNvbWV0aGluZyBmcm9tIGVhY2gsIGJ1dCBpdCBpcyBzb21ldGltZXMgaGFyZCB0byBjb25uZWN0IHRoZSBkaWZmZXJlbnQgbGFuZ3VhZ2UgdXNlZC4gDQoNClBlcnNvbmFsbHksIEkgbGlrZSBhIGxvdCB0aGUgYXBwcm9hY2ggb2YgR290ZWxsaSBhbmQgRWxsaXNvbiBib29rIG9mIGhhdmluZyBhbiBleGFtcGxlIHdpdGggY2FsY3VsYXRpb24gZG9uZSAoYWxtb3N0IGJ5ICJoYW5kIikgdG8gdW5kZXJzdGFuZCB0aGUgY29uY2VwdHMgYmVoaW5kIGFuZCB0aGUgaW50ZXJwcmVhdGlvbi4gDQoNCkhlcmUgSSBhdHRlbXB0IHRvIHB1dCB0b2dldGhlciBzdWNoIGEgd29ya2VkIGV4YW1wbGUgdXNpbmcgdGhlIGZ1bmN0aW9uIHJkYSBpbiB2ZWdhbi4gVGhpcyBmdW5jdGlvbiBwZXJmb3JtcyBhIHNpbXBsZSBwY2EgaWYgb25seSByZXNwb25zZSB2YXJpYWJsZXMgYXJlIGdpdmVuIChubyBleHBsYW5hdG9yeSB2YXJpYWJsZXMgb3IgY292YXJpYXRlcykuIA0KDQpOb3RlOiBBdCB0aGlzIHBvaW50IG15IG1haW4gb2JqZWN0aXZlIHdpdGggdGhpcyB3b3JrZWQgZXhhbXBsZSBpcyB0byB1bmRlcnN0YW5kIGhvdyBhcmUgdGhlIGNhbGN1bGF0aW9uIG1hZGUhDQoNCiMgTG9hZGluZCB2ZWdhbiBhbmQgZGF0YQ0KDQpgYGB7ciwgbWVzc2FnZT1GQUxTRX0NCmxpYnJhcnkodmVnYW4pDQpgYGANCg0KVGhlIGRhdGEgSSB1c2UgaW4gdGhpcyBleGFtcGxlIGlzIGEgc3Vic2V0IG9mIDYgcm9vdCB0cmFpdHMgdmFyaWFibGVzIG1lYXN1cmVkIG9uIDIzNiBwbGFudHMgKGJ5IGV4dGVuc2lvbiB0aGVyZSBhcmUgMjM1IGRlZ3JlZXMgb2YgZnJlZWRvbSkNCmBgYHtyfQ0Kcm9vdF90cmFpdHM8LXJlYWRSRFMoInJvb3RfdHJhaXRzLlJEUyIpDQpoZWFkKHJvb3RfdHJhaXRzKQ0KYGBgDQoNCkRvaW5nIGEgc2ltcGxlIHBjYSBpcyBkb25lIGJ5Og0KYGBge3J9DQptb2RlbF9wcnVlYmE8LXJkYShyb290X3RyYWl0cykNCmBgYA0KDQpXaGF0IGNvbWVzIG91dCBvZiB0aGlzIGlzIGEgbGlzdCBvZiBkaWZmZXJlbnQgdHlwZSBvZiBvdXRwdXRzDQoNCmBgYHtyfQ0KbmFtZXMobW9kZWxfcHJ1ZWJhKQ0KYGBgDQoNCk91dCBvZiBhbGwgdGhvc2Ugb3V0cHV0cyBUaGVyZSBhcmUgZm91ciBvdXRwdXRzIEkgd2lsbCBnbyB0aHJvdWdoIHRoZWlyIGNhbGN1bGF0aW9uLiBUaGVzZSBvdXRwdXRzIGFyZSBpbXBvcnRhbnQgZm9yIHRoZSBwbG90dGluZyB0aGUgZGF0YSAod2hpY2ggaXMgb25lIG9mIHRoZSBtYWluIHJlYXNvbnMgdG8gY29uZHVjdCBhIHBjYSkNCg0KDQojIDEuIFN0YW5kYXJkaXppbmcgdmFyaWFibGVzIChoZXJlIHRoZSByb290IHRyYWl0cykNCg0KYGBge3J9DQojVGhlIHN0YW5kYXJkaXplZCB2YXJpYWJsZXMgY2FuIGJlIGZvdW5kIGVpdGhlciBpbiA6DQptb2RlbF9wcnVlYmEkWWJhclsxLDFdICMwLjA4MzA1OTE5ICBvciANCm1vZGVsX3BydWViYSRDQSRYYmFyWzEsMV0gIzAuMDgzMDU5MTkNCmBgYA0KDQoNCmBgYHtyfQ0KI0l0IHN0YW5kYXJkaXplcyB0aGUgdmFyaWF0aW9uIG9mIGVhY2ggdmFsdWUgdG8gdGhlIG1lYW4gYnkgdGhlIHN0YW5kYXJkIGRldmlhdGlvbg0KKCh0cmFpdHNfdG9fY29ycmVjdCRyb290TlsxXS1tZWFuKHRyYWl0c190b19jb3JyZWN0JHJvb3ROKSkvc2QodHJhaXRzX3RvX2NvcnJlY3Qkcm9vdE4pKS8yLjAxNTE4NA0KDQojQWx0ZXJuYXRpdmVseSBvbmUgY2FuIHVzZSB0aGUgZnVuY3Rpb24gInNjYWxlIiBmcm9tIGJhc2UgUg0Kc2NhbGUoYXMubWF0cml4KHRyYWl0c190b19jb3JyZWN0KSxjZW50ZXIgPSBULHNjYWxlID0gVClbMSwxXS8yLjAxNTE4NCANCg0KI05PVEUuIEkgc3RpbGwgZG8gbm90IGtub3cgd2h5IGl0IGlzIGRpdmlkZWQgYnkgMi4wMTUNCg0KDQojVGh1cywgdGhpcyBob2xkcyB0cnVlOg0KYWxsKA0KICByb3VuZChzY2FsZSh0cmFpdHNfdG9fY29ycmVjdCRyb290TikvMi4wMTUxODQsZGlnaXRzID0gMyk9PQ0KICAgIHJvdW5kKG1vZGVsX3BydWViYSRDQSRYYmFyWywxXSxkaWdpdHMgPSAzKSkNCmBgYA0KDQojIDIuIFRoZSBFaWdlbnZhbHVlcyBhbmQgdGhlIGVpZ2VudmVjdG9ycw0KDQpBcyBzdGF0ZWQgaW4gdGhlIEdvdGVsbGkgYW5kIEVsbGlzc29uIG9yIGluIExlZ2VuZHJlIGFuZCBMZWdlbmRyZSwgYSBQQ0EgcmVsaWVzIG9uIGNhbGN1bGF0aW5nIGVpZ2VudmFsdWVzIGFuZCBlaWdlbnZlY3RvciBvZiB0aGUgdmFyaWFuY2UtY292YXJpYW5jZSBtYXRyaXggb2YgdGhlIHN0YW5kYXJkaXplIGRhdGEuIA0KDQpUaGUgZXhhY3QgbWF0aCBiZWhpbmQgdGhlIGNhbGN1bGF0aW9uIG9mIHRoZSBlaWdlbnZhbHVlcyBhbmQgZWlnZW52ZWN0b3JzIGlzIG91dCBvZiB0aGUgc2NvcGUgaGVyZS4gRm9yIHRoZSBtb21lbnQgaXQgaXMgZW5vdWdoIHRvIGtub3cgdGhhdDoNCg0KIGEuIEFuIGVpZ2VudmFsdWUgaXMgYSBzaW5nbGUgbnVtYmVyDQogYi4gQW4gZWlnZW52ZWN0b3IgaXMgYSBzZWlyZXMgKGEgdmVjdG9yKSBvZiBudW1iZXJzDQogYy4gVGhlcmUgYXJlIGFzIG1hbnkgZWlnZW52YWx1ZXMgYW5kIGVpZ2VudmVjdG9ycyBhcyB0aGVyZSBhcmUgdmFyaWFibGVzIGluIHRoZSBkYXRhLiBJbiB0aGlzIGNhc2UgNiBiZWNhdXNlIHdlIGhhdmUgNiByb290IHRyYWl0cy4NCiBkLiBFYWNoIGVpZ2VudmFsdWUgaGFzIGl0cyBjb3JyZXNwb25kaW5nIGVpZ2VudmVjdG9yIQ0KDQojIDMuIFRoZSBFaWdlbnZhbHVlcw0KDQpgYGB7cn0NCiNUaGUgZWlnZW52YWx1ZXMgY2FuIGJlIGZvdW5kIGluOg0KbW9kZWxfcHJ1ZWJhJENBJGVpZw0KYGBgDQoNCg0KYGBge3J9DQojVGhleSBjYW4gYWxzbyBiZSBvYnRhaW5lZCB2aWEgdGhlIHN2ZCBmdW5jdGlvbiBCVVQgdGhleSBoYXZlIHRvIGJlIHNxdWFyZWQ6DQogIA0KYWxsKChzdmQobW9kZWxfcHJ1ZWJhJENBJFhiYXIpJGQpXjI9PW1vZGVsX3BydWViYSRDQSRlaWcpI1RoaXMgaXMgVFJVRSENCmBgYA0KDQoNCmBgYHtyfQ0KI09yIG1hbnVhbGx5IHdvcmtzIHVzaW5nIHRoZSBlaWdlbiBmdW5jdGlvbi4gQlVUIHRoZXkgaGF2ZSB0byBiZSBtdWx0aXBsaWVkIGJ5IHRoZSBkZWdyZWVzIG9mIGZyZWVkb20gMjM1DQoNCnJvdW5kKG1vZGVsX3BydWViYSRDQSRlaWcsZGlnaXRzID0gMyk9PXJvdW5kKGVpZ2VuKGNvdihtb2RlbF9wcnVlYmEkQ0EkWGJhcikpJHZhbHVlKjIzNSxkaWdpdHMgPSAzKQ0KDQpgYGANCg0KSW4gc3VtbWFyeSB0aGlzIGNvbmZpcm1zIHdoYXQgdGhlIGJvb2sgc2F5czogdGhlIGVpZ2VudmFsdWVzIGFyZSBjYWxjdWxhdGVkIGZyb20gdmFyaWFuY2UtY292YXJpYW5jZSBtYXRyaXggb2Ygc3RhbmRhcmRpemVkIGRhdGEgKHN0YW5kYXJkaXphdGlvbiBvZiAoeWktbWVhbih5KSkvc2QoeSkpDQoNCg0KIyA0LiBUaGUgRWlnZW52ZWN0b3JzIChvciAic3BlY2llcyBzY29yZXMiIGluIHZlZ2FuIGRvY3VtZW50YXRpb24pDQoNCmBgYHtyfQ0KI1RoZSBlaWdlbnZlY3RvcnMgb3IgInNwZWNpZXMiIHNjb3JlcyBjYW4gYmUgZm91bmQgaW46DQptb2RlbF9wcnVlYmEkQ0Ekdg0KYGBgDQoNCg0KYGBge3J9DQojYXMgYmVmb3JlIHRoZXkgY2FuIGJlIG1hbnVhbGx5IGNhbGN1bGF0ZWQgZnJvbSB2YXJpYW5jZS1jb3ZhcmlhbmNlIG1hdHJpeA0Kcm91bmQoZWlnZW4oY292KG1vZGVsX3BydWViYSRDQSRYYmFyKSkkdmVjdG9ycyxkaWdpdHMgPSAzKT09cm91bmQobW9kZWxfcHJ1ZWJhJENBJHYsZGlnaXRzID0gMykNCg0KI2J1dCwgZm9yIHNvbWUgcmVhc29uIGFsdGhvdWdoIHRoZSB2YWx1ZXMgYXJlIHRoZSBzYW1lIHRoZSBzaWduIGlzIHNvbWV0aW1lcyBub3QgdGhlIHNhbWUuLi4NCmBgYA0KDQoNCmBgYHtyfQ0KI1RoZSBlaWdlbnZlY3RvcnMgY2FuIGFsc28gYmUgcmV0cmlldmVkIHZpYSBmdW5jdGlvbiAic2NvcmVzIiB3aXRoIG5vIHNjYWxpbmchDQpzY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSAic3BlY2llcyIsY2hvaWNlcyA9IDEsc2NhbGluZyA9IDApPT1tb2RlbF9wcnVlYmEkQ0EkdlssMV0NCmBgYA0KDQojIyA0LjEgIlNjYWxpbmciIG9mIHRoZSBlaWdlbnZlY3RvcnMNCg0KVGhlIGVpZ2VudmVjdG9ycyBjYW4gYmUgInNjYWxlZCIgIGJ5ICJzcGVjaWVzIiBvciAic2l0ZXMiICh1c2luZyB0aGUgdGVybWlub2xvZ3kgZnJvbSB2ZWdhbikuIFRoaXMgaXMgZG9uZSB1c2luZyB0aGUgc2NvcmUgZnVuY3Rpb24uIFRoaXMgc2NhbGluZyBtYXR0ZXJzIGJlY2F1c2UgaXQgZGV0ZXJtaW5lcyB0aGUgcGxvdHRpbmcgYW5kIGludGVycHJlYXRpb24gZnJvbSB0aGUgcmVzdWx0cyAoc2VlIGJlbG93KQ0KDQpJbiBib3RoIHR5cGVzIG9mIHNjYWxpbmcgdGhlIGVpZ2VudmVjb3JzIGFyZSBmaXJzdCBtdWx0aXBsaWVkIGJ5IGEgImNvbnN0YW50IiB3aGljaCBpcyBlcXVhbCB0byB0aGUgZm91cnRoIHJvb3Qgb2YgdGhlIHByb2R1Y3Qgb2YgdGhlIHN1bSBvZiBlaWdlbnZhbHVlcyBhbmQgdGhlIGRlZ3JlZXMgb2YgZnJlZWRvbSAodGhlIGZvcm11bGEgY2FuIGJlIGZvdW5kIGluIHRhYmxlIDIgb2YgdGhlICJEZXNpZ24gZGVjaXNpb25zIGFuZCBpbXBsZW1lbnRhdGlvbiBkZXRhaWxzIGluIHZlZ2FuIiBwZGYgdGhhdCBjb21lcyB3aXRoIHZlZ2FuKToNCg0KYGBge3J9DQojSW4gdGhpcyBjYXNlLCB0aGUgY29uc3RhbnQgaXMgMzIuMTMxNSBhbmQgY29tZXMgYWZ0ZXI6DQooc3VtKG1vZGVsX3BydWViYSRDQSRlaWcpKigyMzYtMSkpXigxLzQpICMzMi4xMzE1DQojYW5kIG9uZSBjYW4gZmluZCBpdCBhcyAiY29uc3QiICBpbiB0aGUgb3V0cHV0IG9mIHNjb3JlcyByZWdhcmRsZXNzIG9mIHNjYWxpbmcNCnNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9ICJzcGVjaWVzIikNCmBgYA0KDQojIyMgNC4xLjEgU2NhbGluZyBieSAic2l0ZXMiDQoNCmBgYHtyfQ0KI2EpIElmIGl0IGlzIHNjYWxpbmcgYnkgInNpdGVzIiB0aGUgZWlnZW52ZWN0b3JzIGFyZSBqdXN0IG11bHRpcGxpZWQgYnkgdGhlIGNvbnN0YW50DQoNCmFsbCgNCiAgcm91bmQoc2NvcmVzKG1vZGVsX3BydWViYSxkaXNwbGF5ID0gInNwZWNpZXMiLHNjYWxpbmcgPSAic2l0ZXMiLGNob2ljZXMgPSAxKSxkaWdpdHMgPSAyKT09DQogICAgcm91bmQobW9kZWxfcHJ1ZWJhJENBJHZbLDFdKjMyLjEzMTUgLGRpZ2l0cyA9IDIpKQ0KYGBgDQoNCiMjIyA0LjEuMiBTY2FsaW5nIGJ5ICJzcGVjaWVzIg0KDQpgYGB7cn0NCiNiKSBJZiBpdCBpcyBzY2FsaW5nIGJ5ICJzcGVjaWVzIiBlYWNoIGVpZ2V2ZWN0b3JzIGlzIGZ1cnRoZXIgbXVsdGlwbGllZCBieSB0aGUgc3F1YXJlIHJvb3QNCiNvZiB0aGUgdGhlaXIgY29ycmVzcG9uZGluZyBlaWdlbnZhbHVlIGRpdmlkZWQgYnkgdGhlIHN1bSBvZiBhbGwgZWlnZW52ZWN0b3JzDQoNCiNUaGlzIHNjYWxpbmcgaXMgdGhlIGRlZmF1bHQgZnJvbSB0aGUgc2NvcmUgZnVuY3Rpb246DQpzY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSAic3BlY2llcyIsY2hvaWNlcyA9IDEsc2NhbGluZyA9ICJzcGVjaWVzIik9PQ0KICBzY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSAic3BlY2llcyIsY2hvaWNlcyA9IDEpDQpgYGANCg0KDQpgYGB7cn0NCiNjYWxjdWxhdGluZyBieSBoYW5kIChoZXJlIG9ubHkgZG9uZSB0byB0aGUgZmlyc3QgZWlnZW52ZWN0b3IpOg0KYWxsKA0KICByb3VuZChzY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSAic3BlY2llcyIsY2hvaWNlcyA9IDEpLGRpZ2l0cyA9IDMpPT0NCiAgICByb3VuZChtb2RlbF9wcnVlYmEkQ0EkdlssMV0qMzIuMTMxNSpzcXJ0KG1vZGVsX3BydWViYSRDQSRlaWdbMV0vc3VtKG1vZGVsX3BydWViYSRDQSRlaWcpKSAsZGlnaXRzID0gMykpDQpgYGANCg0KIyA1LiBUaGUgUHJpbmNpcGFsIENvbXBvbmVudCBTY29yZXMgKGFrYSAiU2l0ZSBTY29yZXMiIGluIHZlZ2FuKQ0KDQpBY2NvcmRpbmcgdG8gR290ZWxsaSBhbmQgRWxsaXNvbiwgdGhlc2Ugc2NvcmVzIGFyZSB0aGUgc3VtIG9mIHRoZSBwcm9kdWN0cyBvZiB0aGUgZWlnZW52ZWN0b3JzIGJ5IHRoZSBzdGFuZGFyZGl6ZWQgeSB2YXJpYWJsZXMuIE9uZSB3YXkgdG8gdW5kZXJzdGFuZCB0aGVtIGlzIGFzIG5ldyB2YXJpYWJsZXMgdGhhdCByZXN1bHQgZnJvbSBjb21iaW5pbmcgdGhlIG9yaWdpbmFsIHN0YW5kYXJkaXplZCB2YXJpYWJsZXMuIA0KDQpCZWNhdXNlIG9mIG1hdGhlbWF0aWNhbCByZWFzb25zIEkgeWV0IGRvIG5vdCB1bmRlcnN0YW5kLCB0aGVzZSBuZXcgdmFyaWFibGVzIGFyZSBpbmRlcGVuZGVudCBvZiBlYWNoIG90aGVyLCB3aGljaCBpcyBvbmUgb2YgdGhlIG1haW4gcmVhc29ucyB3ZSBjb25kdWN0IGEgUENBIGluIHRoZSBmaXJzdCBwbGFjZS4NCg0KYGBge3J9DQojVGhleSBjYW4gYmUgZm91bmQgaW46DQpoZWFkKG1vZGVsX3BydWViYSRDQSR1KQ0KYGBgDQoNCkFzIG1lbnRpb25lZCBhYm92ZSwgd2UgZ2V0IGFzIG1hbnkgc2l0ZSBzY29yZXMgYXMgdGhlcmUgYXJlIHZhcmlhYmxlcyBpbiB0aGUgb3JpZ2luYWwgdGFibGU6DQoNCmBgYHtyfQ0KZGltKG1vZGVsX3BydWViYSRDQSR1KSM2IHByaW5jaXBhbCBjb21wZW5lbnQgc2NvcmVzIChvciAic2l0ZSBzY29yZXMiIGFzIGluIHZlZ2FuKSB3aXRoIDIzNiAib2JzZXJ2YXRpb25zIg0KZGltKHRyYWl0c190b19jb3JyZWN0KSM2IG9yaWduYWwgdmFyYWlibGVzIChyb290IHRyYWl0cykgd2l0aCAyMzYgIm9ic2VydmF0aW9ucyINCmBgYA0KDQpUaGVpciBjYWxjdWxhdGlvbiBmb2xsb3dzIGluZGVlZCB0aGUgZm9ybXVsYSBpbiBHb3RlbGxpIGFuZCBFbGxpc29uDQpgYGB7cn0NCiNJbmRlZWQsIHZlZ2FuIGZvbGxvd3MgdGhlIGZvcm11bGEgc3RhdGVkIGluIEdvdGVsbGkgQlVUIGluIHRoZSBwYWNrYWdlIHRoZXNlIHN1bXMgYXJlIGZ1cnRoZXIgZGl2aWRlZCBieSB0aGUgDQojY29ycmVzcG9uZGluZyBlaWdlbnZsYXVlIChJIHN0aWxsIGRvIG5vdCBrbm93IHdoeSkuIEhlcmUgZm9yIHRoZSBmaXJzdCBzY29yZToNCg0Kc3VtKA0KICBtb2RlbF9wcnVlYmEkQ0EkdlssMV0qbW9kZWxfcHJ1ZWJhJENBJFhiYXJbMSxdKS82My4zNjM4ICMtMC4wMTcyODgwMQ0KDQpzdW0oDQogIG1vZGVsX3BydWViYSRDQSR2WywxXSptb2RlbF9wcnVlYmEkQ0EkWGJhclsyLF0pLzYzLjM2MzggIy0wLjAyNjU1MDk5DQoNCnN1bSgNCiAgbW9kZWxfcHJ1ZWJhJENBJHZbLDFdKm1vZGVsX3BydWViYSRDQSRYYmFyWzMsXSkvNjMuMzYzOCAjLTAuMDU1NzI0NDcNCg0Kc3VtKA0KICBtb2RlbF9wcnVlYmEkQ0EkdlssMV0qbW9kZWxfcHJ1ZWJhJENBJFhiYXJbNCxdKS82My4zNjM4ICMtMC4wMjI2ODAzOA0KDQpzdW0oDQogIG1vZGVsX3BydWViYSRDQSR2WywxXSptb2RlbF9wcnVlYmEkQ0EkWGJhcls1LF0pLzYzLjM2MzggIy0wLjAwODYzNDEzOQ0KYGBgDQoNCg0KYGBge3J9DQojd2hpY2ggaW5kZWVkIGlzIHRoZSBzYW1lOg0KbW9kZWxfcHJ1ZWJhJENBJHVbMSwxXSMgLTAuMDE3Mjg4MDENCm1vZGVsX3BydWViYSRDQSR1WzIsMV0jIC0wLjAyNjU1MDk4DQptb2RlbF9wcnVlYmEkQ0EkdVszLDFdIyAtMC4wNTU3MjQ0Ng0KbW9kZWxfcHJ1ZWJhJENBJHVbNCwxXSMgLTAuMDIyNjgwMzgNCm1vZGVsX3BydWViYSRDQSR1WzUsMV0jIC0wLjAwODYzNDEzOA0KYGBgDQoNCg0KYGBge3J9DQojT3IgdGhleSBjYW4gYmUgcmV0cmlldmVkIHVzaW5nIHRoZSBzY29yZSBmdW5jdGlvbiB3aXRob3V0IHNjYWxpbmc6DQoNCnNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9ICJzaXRlcyIsc2NhbGluZyA9IDApWzEsMV0jIC0wLjAxNzI4ODAxDQpzY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSAic2l0ZXMiLHNjYWxpbmcgPSAwKVsyLDFdIyAtMC4wMjY1NTA5OA0Kc2NvcmVzKG1vZGVsX3BydWViYSxkaXNwbGF5ID0gInNpdGVzIixzY2FsaW5nID0gMClbMywxXSMgLTAuMDU1NzI0NDYNCmBgYA0KDQojIyA1LjEgIlNjYWxpbmciIG9mIHRoZSBzaXRlIHNjb3Jlcw0KDQpBcyB3aXRoIHRoZSBlaWdlbnZlY3RvcnMgKG9yIHRoZSAgInNwZWNpZXMgc2NvcmVzIiBpbiB2ZWdhbiksIHRoZSBzaXRlIHNjb3JlcyBjYW4gYWxzbyBiZSBzY2FsZWQgYWNjb3JkaW5nIGJ5ICJzaXRlIiBvciBieSAic3BlY2llcyIuIFRoZSBmb3JtdWxhIGZvciBlYWNoIHR5cGUgb2Ygc2NhbGluZyBpbiB0YWJsZSAxIG9mIHRoZSAiRGVjaXNpb25zIiBQREYgaW4gdGhlIHZlZ2FuIGRvY3VtZW50YXRpb24uIA0KDQpBcyBpbiB0aGUgZWlnZW52ZWN0b3JzLCBmb3IgYm90aCBzY2FsaW5ncyB0aGUgc2NvcmVzIGFyZSBhbHdheXMgbXVsdGlwbGllZCBieSBhIGNvbnN0YW50IHRoYXQgaXM6IA0KDQpgYGB7cn0NCihzdW0obW9kZWxfcHJ1ZWJhJENBJGVpZykqKDIzNi0xKSleKDEvNCkgIzMyLjEzMTUNCmBgYA0KDQojIDUuMS4xIFNhY2xpbmcgYnkgInNpdGUiDQoNCmBgYHtyfQ0KI2EpIElmIHNjYWxpbmcgYnkgInNpdGUiIGVhY2ggc2NvcmUgaXMgZnVydGhlciBtdWx0aXBsaWVkIGJ5IHRoZSBzcXVhcmUgcm9vdCBvZiB0aGUgdGhlaXIgY29ycmVzcG9uZGluZyBlaWdlbnZhbHVlIGRpdmlkZWQgYnkgdGhlIHN1bSBvZiBhbGwgZWlnZW52ZWN0b3JzDQoNCiNjYWxjdWxhdGluZyBieSBoYW5kIChoZXJlIG9ubHkgZG9uZSB0byB0aGUgZmlyc3Qgc2NvcmUpOg0KYWxsKA0KICByb3VuZChzY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSAic2l0ZXMiLHNjYWxpbmcgPSAic2l0ZXMiLGNob2ljZXMgPSAxKSxkaWdpdHMgPSAzKT09DQogICAgcm91bmQobW9kZWxfcHJ1ZWJhJENBJHVbLDFdKjMyLjEzMTUqc3FydChtb2RlbF9wcnVlYmEkQ0EkZWlnWzFdL3N1bShtb2RlbF9wcnVlYmEkQ0EkZWlnKSkgLGRpZ2l0cyA9IDMpKQ0KYGBgDQoNCiMgNS4xLjIgU2FjbGluZyBieSAic3BlY2llcyINCg0KYGBge3J9DQojYikgU2NhbGluZyBieSAic3BlY2llcyINCiNJbiB0aGlzIHNjYWxpbmcgdGhlIHNpdGUgc2NvcmVzIGFyZSBvbmx5IG11bHRpcGxpZWQgYnkgdGhlIGNvbnN0YW50IA0KDQojVGh1czoNCm1vZGVsX3BydWViYSRDQSR1WzEsMV0qMzIuMTMxNSAjLTAuNTU1NDg5NQ0KbW9kZWxfcHJ1ZWJhJENBJHVbMiwxXSozMi4xMzE1ICMtMC44NTMxMjI5DQptb2RlbF9wcnVlYmEkQ0EkdVszLDFdKjMyLjEzMTUgIy0xLjc5MDUxMQ0KYGBgDQoNCg0KYGBge3J9DQojVGhpcyBpcyB0aGUgZGVmYXVsdCBzY2FsaW5nIGZyb20gdGhlICJzY29yZXMiIGZ1bmN0aW9uIChhcyBmb3IgdGhlIGVpZ2VudmVjdG9ycykNCnNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9ICJzaXRlcyIpWzEsMV0jIC0wLjU1NTQ4OTYNCnNjb3Jlcyhtb2RlbF9wcnVlYmEsZGlzcGxheSA9ICJzaXRlcyIsc2NhbGluZyA9ICJzcGVjaWVzIilbMSwxXSMgLTAuNTU1NDg5Ng0KYGBgDQoNCg0KYGBge3J9DQojVGh1cyB0aGlzIGhvbGRzOg0KYWxsKA0KICByb3VuZChzY29yZXMobW9kZWxfcHJ1ZWJhLGRpc3BsYXkgPSAic2l0ZXMiKVssMV0sZGlnaXRzID0gNCk9PQ0KICAgIHJvdW5kKG1vZGVsX3BydWViYSRDQSR1WywxXSozMi4xMzE1LGRpZ2l0cyA9IDQpKQ0KYGBgDQoNCg0KIyBVbmRlcnN0YW5kaW5nIHRoZSBzY2FsaW5ncw0KDQpJbiBzdW1tYXJ5LCB3aGVuIHNjYWxpbmcgYnkgc3BlY2llcyB0aGUgc2l0ZSBzY29yZXMgKGFrYSBwcmluY2lwYWwgY29tcG9uZW50IHNjb3JlcykgYXJlIG9ubHkgbXVsdGlwbGllZCBieSB0aGUgY29uc3RhbnQgdmFsdWUgd2hpbGUgdGhlIHNwZWNpZXMgc2NvcmVzIChha2EgZWlnZW52ZWN0b3JzKSBhcmUgZnVydGhlciBtdWx0aXBsaWVkIGJ5IHRoZSBzcXVhcmUgcm9vdCBvZiB0aGUgcmVzcGVjdGl2ZSBlaWdlbnZhbHVlIGRpdmlkZWQgYnkgdGhlIHN1bSBvZiBlaWdlbnZhbHVlcy4gV2hlbiBzY2FsaW5nIGJ5ICJzaXRlcyIgaXQgaXMgdGhlIG9wcG9zaXRlLg0KDQpPciBpbiBtb3JlIHNpbXBsZXIgdGVybXM6IA0KDQogKiBXaGVuIHNjYWxpbmcgYnkgc2l0ZSwgdGhlIHNpdGUgc2NvcmVzIGFyZSBzY2FsZWQsIHRoZSBzcGVjaWVzIHNjb3JlcyBhcmUgbm90DQogKiBXaGVuIHNjYWxpbmcgYnkgc3BlY2llcywgdGhlIHNwZWNpZXMgc2NvcmVzIGFyZSBzY2FsZWQsIHRoZSBzaXRlcyBjb3JlcyBhcmUgbm90DQoNCkxvb2tpbmcgY2xvc2VseSBhdCB0aGUgc2NhbGluZyBmb3JtdWxhLCB0aGlzIGlzIGxpa2UgYSBwcm9wb3J0aW9uIG9mIHZhcmlhdGlvbiBleHBsYWluZWQgYnkgZWFjaCBzaXRlIHByaW5jaXBhbCBjb21wb25lbnQgc2NvcmUuDQoNClRodXMgYnkgbXVsdGlwbHlpbmcgZWFjaCBzY29yZXMgYnkgdGhpcyBwcm9wb3J0aW9uIG9uZSBpcyBzdGFuZGFyZGl6aW5nIGl0cyB2YWx1ZSBpbiB1bml0cyBvZiB2YXJpYW5jZQ0KZXhwbGFpbmVkLg0KDQoNCg0K</div>
 
 
 
