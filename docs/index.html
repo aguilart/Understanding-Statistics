@@ -11,7 +11,7 @@
 
 
 
-<title>General info</title>
+<title>What can you find in this site</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -289,13 +289,23 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">General info</h1>
+<h1 class="title toc-ignore">What can you find in this site</h1>
 
 </div>
 
 
-<div id="here-i-am-putting-together-several-self-help-code-to-understand-better-diverse-set-of-statistics" class="section level2">
-<h2>Here I am putting together several “self help” code to understand better diverse set of statistics</h2>
+<ul>
+<li>Worked examples of different statistical techniques (mostly parametric at this point)</li>
+<li>A comparison between the outputs using functions from r packages and “by hand” calculations</li>
+</ul>
+<p>“By hand” here I mean basic calculations based on means and deviations which are the core of all these techniques</p>
+<div id="why-this-website" class="section level1">
+<h1>Why this website</h1>
+<p>Personally, I think understanding the calculation behind a given statistical technique helps interpreting the outcome and plotting results.</p>
+<p>The idea for this came when doing some ordinations (based on PCA) using the package vegan. I wanted to plot the results using ggplot instead of default plot function from vegan. I was left with two optios:</p>
+<p>Either, search and learn how to use another r package that links the output of the analysis of vegan and the aesthetics of ggplot. Or extract the information for the ordination output from vegan and plotting myself with ggplot.</p>
+<p>I prefer the last option, but this requires understanding what data to extract and why. I think in this case it is really useful to understand how the calculations were made within the function (the algorithm that follows) to make the right decision.</p>
+<p>Instead of these reflections sit in my computer, I decided to share them in case anyone else finds it useful!</p>
 </div>
 
 
